@@ -1,21 +1,14 @@
 import pandas
 
-# Načti data do `DataFrame`, který si pojmenuj `jobs`.
-jobs = pandas.read_csv("DataAnalyst.csv")
-
+# Načti data do DataFrame, který si pojmenuj titanic.
+titanic = pandas.read_csv("titanic.csv")
 # Nech si zobrazit názvy sloupců, které jsou v souboru uloženy.
-print(jobs.head())
-# print(jobs.columns)
-# print(jobs.info())
-
-# Podívej se, kolik má soubor řádek.
-print(jobs.shape)
-# print(jobs.shape[0])  # vypise jen pocet radek
-# print(jobs)  # na zaver vypise i rozmer tabulky
-
-# Zjisti všechny informace o pracovní pozici na desátém řádku.
-print(jobs.iloc[9])
-
-# Podívej se, kde budou pracovat zájemci vybraní na dvanáctou až dvacátou pozici.
-print(jobs.iloc[11:20, 6])  # Location
-print(jobs.iloc[11:20, 5:8])  # Company Name, Location, Headquarters
+print(titanic.columns)
+print(titanic.info())
+# Podívej se, kolik má soubor řádků.
+print(titanic.shape)
+# Zjisti, jaký byl průměrný věk pasažérů.
+print(titanic.info())
+print(titanic["Age"].info())
+# Kolik bylo nejstaršímu pasažérovi?
+print(titanic["Age"].info())
