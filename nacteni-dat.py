@@ -8,7 +8,8 @@ print(titanic.info())
 # Podívej se, kolik má soubor řádků.
 print(titanic.shape)
 # Zjisti, jaký byl průměrný věk pasažérů.
-print(titanic.info())
-print(titanic["Age"].info())
+print(titanic.describe())
+print(titanic["Age"].describe())
 # Kolik bylo nejstaršímu pasažérovi?
-print(titanic["Age"].info())
+print(titanic.describe())
+print(titanic["Age"].describe())
